@@ -1,9 +1,10 @@
 package com.androidlibrary;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity
+import base.BaseActivity;
+
+public class MainActivity extends BaseActivity
 {
 
     @Override
@@ -11,5 +12,19 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        showDialogSingle(this,"提示","请检查用户名","确定");
+    }
+
+
+    @Override
+    public void leftClickListener()
+    {
+        showTips("左边");
+    }
+
+    @Override
+    public void rightClickListener()
+    {
+        showTips("右边");
     }
 }

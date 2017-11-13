@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Toast动画 -->
+    <style name="anim_view">
+        <item name="@android:windowEnterAnimation">@anim/toast_anim_in</item>
+        <item name="@android:windowExitAnimation">@anim/toast_anim_out</item>
+    </style>
 </resources>

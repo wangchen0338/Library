@@ -133,7 +133,6 @@ public abstract class BaseActivity extends AppCompatActivity implements ConfirmC
      */
     public void showDialogAll(BaseActivity context,final String strTitle,final String strMessage,final String strLeftBtn,final String strrightBtn)
     {
-
         ConfirmCancelUtilDialog dialog = ConfirmCancelUtilDialog.getInstance(context,
                 new ConfirmCancelUtilDialog.DialogSetListener() {
                     @Override
@@ -153,6 +152,17 @@ public abstract class BaseActivity extends AppCompatActivity implements ConfirmC
 
 
 
+    @Override
+    public void leftClickListener()
+    {
+       // showTips("左边");
+    }
+
+    @Override
+    public void rightClickListener()
+    {
+       // showTips("右边");
+    }
 
 
 
